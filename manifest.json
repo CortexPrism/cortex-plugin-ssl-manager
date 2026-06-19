@@ -16,11 +16,26 @@
       "description": "Discover all certificates across domains",
       "params": []
     },
-    { "name": "ssl_monitor", "description": "Monitor expiration dates", "params": [] },
-    { "name": "ssl_test_chain", "description": "Test certificate chain", "params": [] },
-    { "name": "ssl_auto_renew", "description": "Auto-renew via Let's Encrypt ACME", "params": [] }
+    {
+      "name": "ssl_monitor",
+      "description": "Monitor expiration dates",
+      "params": []
+    },
+    {
+      "name": "ssl_test_chain",
+      "description": "Test certificate chain",
+      "params": []
+    },
+    {
+      "name": "ssl_auto_renew",
+      "description": "Auto-renew via Let's Encrypt ACME",
+      "params": []
+    }
   ],
   "dependencies": {},
   "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "aiDisclosure": {
+    "tools": ["Kilo (DeepSeek) — batch scaffold"],
+    "humanReview": true
+  }
 }
