@@ -1,0 +1,65 @@
+{
+  "name": "example-plugin",
+  "version": "1.0.0",
+  "description": "Example Cortex plugin demonstrating best practices",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-example",
+  "homepage": "https://github.com/CortexPrism/cortex-plugin-example",
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
+  "tools": [
+    {
+      "name": "hello",
+      "description": "Greet a person by name",
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "description": "The person's name",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "add",
+      "description": "Add two numbers together",
+      "params": [
+        {
+          "name": "a",
+          "type": "number",
+          "description": "First number",
+          "required": true
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "description": "Second number",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "fetch_data",
+      "description": "Fetch data from an external API",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL to fetch from",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "cortex": ">=1.0.0"
+  },
+  "aiDisclosure": null
+}
