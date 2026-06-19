@@ -44,7 +44,7 @@ const ssl_test_chainTool: Tool = {
 };
 
 const ssl_auto_renewTool: Tool = {
-  definition: { name: 'ssl_auto_renew', description: 'Auto-renew via Let's Encrypt ACME', params: [], capabilities: ['network:fetch'] },
+  definition: { name: 'ssl_auto_renew', description: 'Auto-renew via Let\'s Encrypt ACME', params: [], capabilities: ['network:fetch'] },
   execute: async (args, ctx) => {
     const s = Date.now();
     try {
